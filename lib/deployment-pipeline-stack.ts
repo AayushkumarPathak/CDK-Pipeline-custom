@@ -1,6 +1,6 @@
-import * as cdk from 'aws-cdk-lib'
-import { Construct } from 'constructs'
-import * as s3 from 'aws-cdk-lib/aws-s3'
+import * as cdk from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import * as s3 from 'aws-cdk-lib/aws-s3';
 
 
 export class DeploymentPipelineStack extends cdk.Stack{
@@ -11,6 +11,6 @@ export class DeploymentPipelineStack extends cdk.Stack{
             versioned:true,
             removalPolicy: cdk.RemovalPolicy.DESTROY,
             autoDeleteObjects:true,
-        })
+        });
     }
 }
